@@ -1,0 +1,204 @@
+/* ============================================================
+   Chronological Prophets – Polished Stylesheet
+   ============================================================ */
+
+/* ── Reset & base ─────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  background-color: #f8f4ef;
+  color: #2c2c2c;
+  margin: 0;
+  padding: 0;
+  line-height: 1.75;
+}
+
+/* ── Page wrapper ─────────────────────────────────────────── */
+body > * {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* give the body itself a centred, padded content column */
+body {
+  padding: 0 24px 60px;
+}
+
+/* ── Page header ──────────────────────────────────────────── */
+.page-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 40vh;
+  padding: 60px 24px;
+  margin-bottom: 48px;
+}
+
+.page-header h1 {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 2rem;
+  color: #1a3550;
+  margin: 0 0 16px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #c8a84b;
+  letter-spacing: 0.02em;
+  max-width: 780px;
+}
+
+.page-header p {
+  color: #555;
+  font-size: 0.97rem;
+  max-width: 680px;
+  margin: 0;
+  font-style: italic;
+}
+
+/* ── Section headings ─────────────────────────────────────── */
+h2 {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 1.4rem;
+  color: #1a3550;
+  margin: 0 0 14px;
+  padding-left: 14px;
+  border-left: 4px solid #c8a84b;
+  letter-spacing: 0.01em;
+}
+
+/* ── Prophet sections (cards) ─────────────────────────────── */
+.prophet-section {
+  background: #ffffff;
+  border: 1px solid #ddd3c4;
+  border-radius: 8px;
+  padding: 28px 32px;
+  margin-bottom: 36px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s ease;
+}
+
+.prophet-section:hover {
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.11);
+}
+
+/* ── Prophet images ───────────────────────────────────────── */
+.prophet-image {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  margin: 0 0 10px;
+  border: 1px solid #ddd3c4;
+}
+
+figure {
+  margin: 0 0 20px;
+}
+
+figcaption {
+  font-size: 0.85em;
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  margin-top: 6px;
+}
+
+/* ── Info tables ──────────────────────────────────────────── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 18px;
+  font-size: 0.95rem;
+}
+
+table,
+th,
+td {
+  border: 1px solid #d6cdc0;
+}
+
+th {
+  background-color: #f0ece4;
+  color: #1a3550;
+  font-weight: 700;
+  width: 160px;
+  padding: 9px 14px;
+  vertical-align: top;
+  text-align: left;
+  font-family: "Georgia", serif;
+}
+
+td {
+  padding: 9px 14px;
+  vertical-align: top;
+  background-color: #fdfaf6;
+}
+
+tr:nth-child(even) td {
+  background-color: #f8f4ef;
+}
+
+/* ── Paragraph text within cards ─────────────────────────── */
+.prophet-section > p {
+  margin: 0 0 12px;
+  color: #333;
+}
+
+/* ── Footnotes ────────────────────────────────────────────── */
+.footnotes {
+  font-size: 0.82em;
+  color: #888;
+  border-top: 1px dashed #d6cdc0;
+  padding-top: 8px;
+  margin-top: 16px;
+}
+
+.footnotes a {
+  text-decoration: none;
+  color: #2a6496;
+  margin-right: 4px;
+}
+
+.footnotes a:hover {
+  text-decoration: underline;
+  color: #c8a84b;
+}
+
+/* ── Final note ───────────────────────────────────────────── */
+body > p:last-of-type {
+  text-align: center;
+  color: #777;
+  font-size: 0.88rem;
+  font-style: italic;
+  margin-top: 40px;
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1.15rem;
+  }
+
+  .prophet-section {
+    padding: 18px 16px;
+  }
+
+  th {
+    width: 110px;
+  }
+}
